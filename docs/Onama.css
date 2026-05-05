@@ -1,0 +1,38 @@
+body {
+  color: rgba(184, 134, 11, 0.55);
+  background:
+    linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.15)),
+    url("slike/poz4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    margin-bottom: 10px;
+}
+.O-nama{
+    background-color: rgba(255,255,255,0.8);
+    padding:30px;
+    border-radius: 10px;
+    color:rgba(184, 134, 11, 0.55);
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+.O-nama p, .kontakt p{
+    margin:10px;
+}
+.kontakt{
+    background-color: rgba(255,255,255,0.8);
+    padding:20px;
+    border-radius: 10px;
+    color:rgba(184, 134, 11, 0.55);
+    justify-content: center;
+    text-align: center;
+}
+.kontakt a{
+    color:rgba(184, 134, 11, 0.55);
+}

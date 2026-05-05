@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Poklon putovanje</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="poklon.css">
+</head>
+<body>
+
+<header class="zaglavlje">
+  <nav class="navigacija">
+    <a href="index.html" class="logo">Planora Journey</a>
+    <div class="linkovi">
+      <a href="index.html">Početna</a>
+      <a href="rezervacije.html">Moje rezervacije</a>
+      <a href="Onama.html">O nama</a>
+      <button id="btnPrijava">Prijava</button>
+      <button id="btnReg">Registracija</button>
+      <button id="btnOdjava" class="sakrij">Odjava</button>
+    </div>
+  </nav>
+</header>
+
+<main class="stranica">
+  <section class="uvod-stranice">
+    <h1>Poklon putovanje</h1>
+  </section>
+
+  <form id="poklonForma" class="forma poklon-forma">
+    <input type="text" id="ime" placeholder="Ime osobe kojoj poklanjaš putovanje" required>
+    <input type="text" id="polazak" placeholder="Mjesto polaska" required>
+    <input type="date" id="datum" required>
+    <input type="number" id="trajanje" placeholder="Broj dana" min="1" required>
+    <select id="tip" required>
+      <option value="">Što osoba najviše voli?</option>
+      <option value="more">More i plaže</option>
+      <option value="grad">Gradove i razgledavanje</option>
+      <option value="priroda">Prirodu</option>
+      <option value="romantika">Romantična putovanja</option>
+      <option value="kultura">Kulturu i povijest</option>
+    </select>
+    <select id="neVoli" required>
+      <option value="">Što osoba ne voli?</option>
+      <option value="hladno">Hladno vrijeme</option>
+      <option value="dugo">Duga putovanja</option>
+      <option value="guzva">Velike gužve</option>
+      <option value="nista">Nema posebnih želja</option>
+    </select>
+    <select id="prijevoz" required>
+      <option value="">Odaberi prijevoz</option>
+      <option value="avion">Avion</option>
+      <option value="bus">Autobus</option>
+    </select>
+    <select id="budzet" required>
+      <option value="">Budžet</option>
+      <option value="nizi">Niži budžet</option>
+      <option value="srednji">Srednji budžet</option>
+      <option value="visi">Viši budžet</option>
+    </select>
+    <textarea id="poklonPoruka" placeholder="Poruka na poklon karti"></textarea>
+    <button type="submit">Stvori poklon kartu</button>
+  </form>
+
+  <div id="poklonRezultat"></div>
+</main>
+
+<div id="prijavaPopup" class="popup sakrij">
+  <div class="kutija">
+    <button id="zatvoreno" class="iks">&times;</button>
+    <h2 id="modNaslov">Prijava</h2>
+    <form id="prijavaForma">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="lozinka" placeholder="Lozinka" required>
+      <button id="posalji" type="submit">Prijavi se</button>
+      <p id="poruka"></p>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script type="module" src="poklon.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Planora Journey</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pocetna.css">
+</head>
+
+<body class="tijelo">
+  <header class="glava">
+    <nav class="traka">
+      <a href="index.html" class="znak">Planora Journey</a>
+      <div class="linkovi">
+        <a href="index.html">Početna</a>
+        <a href="rezervacije.html">Moje rezervacije</a>
+        <a href="Onama.html">O nama</a>
+        <button id="btnPrijava" class="tipke">Prijava</button>
+        <button id="btnReg" class="tipke">Registracija</button>
+        <button id="btnOdjava" class="tipke sakrij">Odjava</button>
+      </div>
+    </nav>
+  </header>
+  <main class="sadrzaj">
+    <section class="sve">
+      <h1>PLANORA<br>JOURNEY</h1>
+      <p>Putujmo zajedno kroz planiranje tvog putovanja</p>
+    </section>
+    <section class="kartice">
+      <a href="plan.html" class="kartica">
+        <h2>Plan putovanja</h2>
+        <p>Upiši željenu destinaciju i broj dana kako bi se prikazao tvoj plan putovanja.</p>
+      </a>
+      <a href="poklon.html" class="kartica">
+        <h2>Poklon putovanje</h2>
+        <p>Ispunjavanjem kratke ankete stvori poklon kartu za putovanje kako bi ju poklonila tebi dragoj osobi.</p>
+      </a>
+      <a href="preporuke.html" class="kartica">
+        <h2>Preporuke</h2>
+        <p>Ovdje možeš vidjeti preporuke drugih ili objaviti svoju kako bi pomogao/la nekome izabrati destinaciju za putovanje.</p>
+      </a>
+    </section>
+  </main>
+  <div id="prijavaPopup" class="popup sakrij">
+    <div class="kutija">
+      <button id="zatvoreno" class="iks">&times;</button>
+      <h2 id="modNaslov">Prijava</h2>
+      <form id="prijavaForma">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="lozinka" placeholder="Lozinka" required>
+        <button id="posalji" type="submit">Prijavi se</button>
+        <p id="poruka"></p>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>

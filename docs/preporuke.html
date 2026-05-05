@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Preporuke</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="preporuke.css">
+</head>
+<body>
+
+<header class="zaglavlje">
+  <nav class="navigacija">
+    <a href="index.html" class="logo">Planora Journey</a>
+    <div class="linkovi">
+      <a href="index.html">Početna</a>
+      <a href="rezervacije.html">Moje rezervacije</a>
+      <a href="Onama.html">O nama</a>
+      <button id="btnPrijava">Prijava</button>
+      <button id="btnReg">Registracija</button>
+      <button id="btnOdjava" class="sakrij">Odjava</button>
+    </div>
+  </nav>
+</header>
+
+<main class="stranica">
+  <section class="uvod-stranice">
+    <h1>Preporuke korisnika</h1>
+    <p>Objavi svoju preporuku i pomozi drugima odabrati destinaciju.</p>
+  </section>
+
+  <form id="prepForma" class="forma prep-forma">
+    <input type="text" id="prepDest" placeholder="Destinacija" required>
+    <select id="prepOcjena" required>
+      <option value="">Ocjena putovanja</option>
+      <option value="1">1 zvjezdica</option>
+      <option value="2">2 zvjezdice</option>
+      <option value="3">3 zvjezdice</option>
+      <option value="4">4 zvjezdice</option>
+      <option value="5">5 zvjezdica</option>
+    </select>
+    <textarea id="prepOpis" placeholder="Opis putovanja" required></textarea>
+    <input type="file" id="prepSlika" accept="image/*" required>
+    <button type="submit">Objavi preporuku</button>
+  </form>
+
+  <p id="prepPoruka" class="poruka sakrij"></p>
+
+  <div id="prepLista" class="prep-grid"></div>
+</main>
+
+<div id="prijavaPopup" class="popup sakrij">
+  <div class="kutija">
+    <button id="zatvoreno" class="iks">&times;</button>
+    <h2 id="modNaslov">Prijava</h2>
+    <form id="prijavaForma">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="lozinka" placeholder="Lozinka" required>
+      <button id="posalji" type="submit">Prijavi se</button>
+      <p id="poruka"></p>
+    </form>
+  </div>
+</div>
+
+<script type="module" src="preporuke.js"></script>
+</body>
+</html>

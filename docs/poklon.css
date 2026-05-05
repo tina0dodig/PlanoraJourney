@@ -1,0 +1,196 @@
+body {
+  color: rgba(184, 134, 11, 0.55);
+  background:
+    linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.15)),
+    url("slike/poz4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.poklon-forma {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.poklon-forma textarea,
+.poklon-forma button {
+  grid-column: 1 / -1;
+}
+
+.karta {
+  overflow: hidden;
+  margin: 35px auto;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+  background: white;
+  border: 1px solid #dbeafe;
+}
+
+.glavaKarte {
+  padding: 18px 25px;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: rgba(184, 134, 11, 0.55);
+}
+
+.tijeloKarte {
+  display: grid;
+  grid-template-columns: 1fr 2px 300px;
+}
+
+.lijevoKarte {
+  padding: 25px;
+  display: flex;
+}
+
+.okomitiTekst {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+  font-size: 24px;
+  color: #1f2937;
+}
+
+.glavniDio {
+  width: 100%;
+}
+
+.mrezaKarte {
+  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.mrezaKarte span,
+.rutaKarte span,
+.datumKarte span,
+.infoMalo span,
+.porukaPoklon span {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgba(184, 134, 11, 0.55);
+}
+
+.mrezaKarte strong {
+  font-size: 22px;
+}
+
+.rutaKarte {
+  gap: 15px;
+  align-items: center;
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+}
+
+.rutaKarte strong {
+  font-size: 22px;
+}
+
+.avionVeliki {
+  opacity: 0.25;
+  font-size: 55px;
+  text-align: center;
+}
+
+.datumKarte {
+  margin-top: 22px;
+}
+
+.porukaPoklon {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #eff6ff;
+}
+
+.razdjelnik {
+  background: repeating-linear-gradient(
+    to bottom,
+    #cbd5e1,
+    #cbd5e1 12px,
+    transparent 12px,
+    transparent 22px
+  );
+}
+
+.desnoKarte {
+  padding: 25px;
+}
+
+.desnoKarte h3 {
+  margin-bottom: 20px;
+  color: rgba(184, 134, 11, 0.55);
+}
+
+.infoMalo {
+  margin-bottom: 15px;
+}
+
+.infoMalo strong {
+  margin-top: 3px;
+  display: block;
+}
+
+.crtKod {
+  height: 55px;
+  margin-top: 25px;
+  background: repeating-linear-gradient(
+    to right,
+    #111827,
+    #111827 3px,
+    white 3px,
+    white 6px
+  );
+}
+
+.spremiWrap {
+  margin: 20px 0 35px;
+  text-align: center;
+}
+
+#spremiBtn {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 900px) {
+  .poklon-forma {
+    grid-template-columns: 1fr;
+  }
+
+  .tijeloKarte {
+    grid-template-columns: 1fr;
+  }
+
+  .razdjelnik {
+    height: 2px;
+  }
+
+  .lijevoKarte {
+    flex-direction: column;
+  }
+
+  .okomitiTekst {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+
+  .mrezaKarte,
+  .rutaKarte {
+    grid-template-columns: 1fr;
+  }
+
+  .avionVeliki {
+    display: none;
+  }
+
+  .glavaKarte {
+    text-align: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

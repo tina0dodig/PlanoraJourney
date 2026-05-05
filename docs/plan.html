@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Plan putovanja</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="plan.css">
+</head>
+<body>
+
+<header class="zaglavlje">
+  <nav class="navigacija">
+    <a href="index.html" class="logo">Planora Journey</a>
+    <div class="linkovi">
+      <a href="index.html">Početna</a>
+      <a href="rezervacije.html">Moje rezervacije</a>
+      <a href="Onama.html">O nama</a>
+      <button id="btnPrijava" class="tipkePlan">Prijava</button>
+      <button id="btnReg" class="tipkePlan">Registracija</button>
+      <button id="btnOdjava" class="tipkePlan sakrij">Odjava</button>
+    </div>
+  </nav>
+</header>
+
+<main class="stranica">
+  <section class="uvod-stranice">
+    <h1>Plan putovanja</h1>
+  </section>
+
+  <form id="planForma" class="forma">
+    <input type="text" id="destinacija" placeholder="Destinacija">
+    <input type="number" id="dani" placeholder="Broj dana">
+    <button>Stvroi plan putovanja</button>
+  </form>
+
+  <div id="planRezultat"></div>
+</main>
+
+<div id="prijavaPopup" class="popup sakrij">
+  <div class="kutija">
+    <button id="zatvoreno" class="iks">&times;</button>
+    <h2 id="modNaslov">Prijava</h2>
+    <form id="prijavaForma">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="lozinka" placeholder="Lozinka" required>
+      <button id="posalji" type="submit">Prijavi se</button>
+      <p id="poruka"></p>
+    </form>
+  </div>
+</div>
+
+<script type="module" src="plan.js"></script>
+</body>
+</html>

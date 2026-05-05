@@ -1,0 +1,68 @@
+.prep-forma textarea,
+.prep-forma button {
+  grid-column: 1 / -1;
+}
+
+body {
+  color: rgba(184, 134, 11, 0.55);
+  background:
+    linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.15)),
+    url("slike/poz4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.prep-naslov {
+  margin: 30px 0 18px;
+  color: rgba(184, 134, 11, 0.55);
+}
+
+.prep-grid {
+  gap: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.prep-kartica {
+  overflow: hidden;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+}
+
+.prep-kartica img {
+  object-fit: cover;
+  height: 220px;
+  width: 100%;
+}
+
+.prep-sadrzaj {
+  padding: 18px;
+}
+
+.prep-vrh {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.prep-vrh h3 {
+  color: rgba(184, 134, 11, 0.55);
+}
+
+.prep-sadrzaj p {
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+  .prep-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.poruka {
+  color: rgba(184, 134, 11, 0.55);
+}

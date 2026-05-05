@@ -1,0 +1,171 @@
+body {
+  background:
+    linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.15)),
+    url("slike/poz4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.zaglavlje {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.78);
+}
+
+.logo,
+.linkovi a {
+  color: rgba(184, 134, 11, 0.55);
+}
+
+.uvod-stranice,
+.forma,
+.herojRezultat,
+.karticaPlana {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.78);
+}
+
+.uvod-stranice h1,
+.stranica h1,
+.tekstRezultat h2 {
+  color: #b8860b;
+}
+
+button {
+  background: rgba(184, 134, 11, 0.55);
+}
+
+button:hover {
+  background: rgba(184, 134, 11, 0.75);
+}
+
+.herojRezultat {
+  margin: 25px 0;
+  border-radius: 20px;
+  padding: 15px;
+  border: 1px solid rgba(255,255,255,0.7);
+}
+
+.slikaDestinacije {
+  object-fit: cover;
+  height: 360px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.tekstRezultat {
+  padding: 20px 8px 5px;
+}
+
+.tekstRezultat p {
+  line-height: 1.6;
+}
+
+.oznakaMala {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #b8860b;
+}
+
+.infoMini {
+  gap: 10px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infoMini span {
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 20px;
+  font-weight: bold;
+  color: #b8860b;
+}
+
+.mrezaPlan {
+  gap: 22px;
+  display: grid;
+}
+
+.karticaPlana {
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.7);
+}
+
+.glavaDana {
+  gap: 15px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(184, 134, 11, 0.55);
+}
+
+.vremenskaCrta {
+  padding: 20px;
+}
+
+.crtaStavka {
+  gap: 13px;
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  margin-bottom: 15px;
+}
+
+.sadrzajCrta {
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.72);
+}
+
+.sadrzajCrta span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(184, 134, 11, 0.55);
+}
+
+.stakloPlan {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.okvirSlika {
+  padding: 8px;
+}
+
+.glavaDana {
+  background: rgba(184, 134, 11, 0.55);
+}
+
+.sadrzajCrta span,
+.tekstRezultat h2,
+.oznakaMala {
+  color: rgba(184, 134, 11, 0.55);
+}
+
+.ikonaCrta {
+  color: #b8860b;
+}
+
+.rezGumb {
+  background: rgba(184, 134, 11, 0.55);
+}
+
+.rezGumb:hover {
+  background: rgba(184, 134, 11, 0.55);
+}
+
+.crtaStavka {
+  display: block;
+}
+
+.bezIkone {
+  width: 100%;
+}
+
+.poruka {
+  color: rgba(184, 134, 11, 0.55);
+}
